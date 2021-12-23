@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ОСАГО 2021 года</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header_logo">
+                    <a href="/"><img class="header_logo_img" src="/img/logo.png" alt="logo.png"></a>
+                </div>
+
+                <div class="header_links">
+                    <ul>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">КАСКО</a></li>
+                        <li><a href="#">Востановить КБМ</a></li>
+                        <li><a href="#">ОСАГО регион</a></li>
+                        <li><a href="#">Техосмотр</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main">
+                <div>
+                    <div class="main_back"></div>
+
+                    <div class="main_title">
+                        <div class="main_title_head">
+                            <h1><span>Калькулятор ОСАГО 2021 года</span><br>
+                                <span>Оформи ОСАГО на выгодных условиях</span><br>
+                                <span>Рассчитай страховку самостоятельно</span>
+                            </h1>
+                        </div>
+    
+                        <div class="main_title_p">
+                            <h3>
+                                Все страховые компаний в одном месте - это удобно!
+                            </h3>
+                        </div>
+    
+                        <div class="main_title_btn">
+                            <a class="button main_title_btn_osago" href="#">Калькулятор ОСАГО</a>
+                            <a class="button main_title_btn_casco" href="#">Калькулятор КАСКО</a>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="calculate">
+                    <div class="calculate_name">
+                        <h2>Калькулятор ОСАГО</h2>
+                        <h3>Простой способ выгодно купить полис</h3>
+                    </div>
+
+                    <div class="calculate_osago">
+
+                        <div class="calculate_input">
+                            <div class="calculate_input_left">
+    
+                                <form class="calculate_input_form" method="post">
+                                    <label for="car_mark">Марка автомобиля</label>
+                                    <input id="car_mark" type="text" placeholder="Укажите марку">
+                                    
+                                    <label for="car_model">Модель автомобиля</label>
+                                    <input id="car_model" type="text" placeholder="Укажите модель">
+
+                                    <label for="car_year">Год выпуска</label>
+                                    <input id="car_year" type="text" placeholder="Укажите год ТС">
+
+                                    <label for="car_hp">Мощность/модификация</label>
+                                    <input id="car_hp" type="text" placeholder="Укажите мощьность в л.с." required>
+                                </form>
+
+                                <form class="calculate_input_period" method="post">
+                                    <label for="date_ins">Дата начала действия нового полиса</label>
+                                    <input id="date_ins" type="date">
+
+                                    <label for="period">Период страхования</label>
+                                    <select name="period" id="period" required>
+                                        <option value="12m">12 месяцев</option>
+                                        <option value="9m">9 месяцев</option>
+                                        <option value="6m">6 месяцев</option>
+                                        <option value="3m">3 месяца</option>
+                                    </select>
+
+                                    <label for="">Город или поселок регистрации собственника авто по паспорту</label>
+                                    <input type="text" placeholder="Укажите ваш город">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doc">
+                    <div class="doc_name">
+                        <h2>Документы которые нужны для оформления ОСАГО</h2>
+                    </div>
+
+                    <div class="doc_list">
+                        <div class="doc_main">
+                            <div class="doc_img">
+                                <img src="/img/passport.jpg" alt="">
+                            </div>
+
+                            <div class="doc_tname">
+                                Паспорт РФ
+                            </div>
+
+                            <div class="doc_ttext">
+                                Разворот с фотографией и разворот с актуальной пропиской..
+                            </div>
+                        </div>
+
+                        <div class="doc_main">
+                            <div class="doc_img">
+                                <img src="/img/drive_card.jpg" alt="">
+                            </div>
+                            
+                            <div class="doc_tname">
+                                Водительское удостоверение
+                            </div>
+
+                            <div class="doc_ttext">
+                                Копия прав с двух сторон
+                            </div>
+                        </div>
+
+                        <div class="doc_main">
+                            <div class="doc_img">
+                                <img src="/img/register_card.jpg" alt="">
+                            </div>
+
+                            <div class="doc_tname">
+                                Свидетельство о регистрации <br>
+                                или ПТС(если машина не стоит на учете)
+                            </div>
+
+                            <div class="doc_ttext">
+                                Копия с двух сторон
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doc_btn">
+                        <a class="button doc_btn_clk" href="#">Позвоните нам</a>
+                    </div>
+                </div>
+
+                <div class="text_container">
+                    <div class="text_line top"></div>
+
+                    <div class="text_text">
+                        Что вы получите при покупке полис ОСАГО? <br>
+                        ОСАГО. Европротокол на случай ДТП. Квитанция. <br>
+                        Уверенность на дороге - бесценно :-)
+                    </div>
+
+                    <div class="text_line bottom"></div>
+                </div>
+
+                <div class="img_container">
+                    <div class="img_frame">
+                        <div class="img_check">
+                            <img src="/img/polis.webp" alt="">
+                        </div>    
+                    </div>
+
+                    <div class="img_frame">
+                        <div class="img_check">
+                            <img src="/img/info_dtp.webp" alt="">
+                        </div>   
+                    </div>
+
+                    <div class="img_frame">
+                        <div class="img_check">
+                            <img src="/img/check.png" alt="">
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="partner_container">
+                    <div class="partner_name">
+                        Наши партнеры <br>
+                        <span>Нажми на логотип чтобы узнать больше.</span>
+                    </div>
+
+                    <div class="partner_list">
+                        <ul>
+                            <li><a href="#"><img src="/img/ingostrah.PNG" alt=""></a></li>
+                            <li><a href="#"><img src="/img/peco-garant.webp" alt=""></a></li>
+                            <li><a href="#"><img src="/img/alfastah.webp" alt=""></a></li>
+                            <li><a href="#"><img src="/img/maks-stah.webp" alt=""></a></li>
+                            <li><a href="#"><img src="/img/vsk-dom.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="region_osago">
+                    <div class="region_info">
+                        <div class="region_text">
+                            <h4>ОСАГО для регионов</h4>
+
+                            <p>Купить ОСАГО с региональной пропиской в Москве в офисах страховых компаний довольно сложно. Наша компания оказывает помощь в покупке онлайн полисов ОСАГО для регионов. Для этого Вам нужно позвонить по телефону, либо отправить фото или скан документов на нашу почту mososago.rf@yandex.ru. Это нужно для онлайн расчета полиса ОСАГО. Дальше действовать будем мы.</p>
+                        </div>
+
+                        <div class="region_btn">
+                            <a class="button" href="#">Позвонить</a>
+                        </div>
+                    </div>
+
+                    <div class="region_img">
+                        <img src="/img/polis2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="try_osago">
+                    <div class="try_name">
+                        <h2>
+                            Проверь свой полис ОСАГО до покупки
+                        </h2>
+
+                        <p>
+                            Как легко убедиться в безопасности покупки <br> ОСАГО
+                        </p>
+                    </div>
+
+                    <div class="try_main">
+                        <div class="try_main_list">
+                            <div class="try_main_list_position">
+                                <div class="icon_check"></div>
+                                
+                                <div class="try_main_list_tb">
+                                    <h6>Проверьте нашу доверенность</h6>
+                                
+                                    <p>
+                                        Каждая страхования компания знает своих партнеров. Вам легко проверить легитимность нашей работы, позвонив в страховую компанию. Вам подтвердят по телефону безопасность покупки.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="try_main_list_position">
+                                <div class="icon_search"></div>
+
+                                <div class="try_main_list_tb">
+                                    <h6>Проверте полис в страховой компании до оплаты</h6>
+                                
+                                    <p>
+                                        Поскольку мы продаем только оригинальные полисы, Вы легко можете проверить их как в страховой компании, так и на общедоступных ресурсах РСА. Сделать это можно еще до подписания и оплаты полиса.
+                                    </p>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="try_main_list_position">
+                                <div class="icon_email"></div>
+
+                                <div class="try_main_list_tb">
+                                    <h6>Мы высылаем макет полиса на Вашу почту</h6>
+                                
+                                    <p>
+                                        Для избежания технических ошибок в полисе, а также проверки легитимности полиса, мы пришлем на вашу почту (e-mail), электронную версию полиса ОСАГО и диагностической карты.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="try_main_img">
+                            <img src="/img/girl_paper.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="try_btn">
+                        <a class="button" href="#">Проверить ОСАГО в РСА</a>
+                    </div>
+                </div>
+
+                <div class="diagnostic">
+                    <div class="diagnostic_head">
+                        <h2>Диагностическая карта</h2>
+
+                        <p>Помощь в получении диагностической карты</p>
+                    </div>
+
+                    <div class="diagnostic_content">
+                        <div class="diagnostic_info">
+                            <div class="diagnostic_text">
+                                <h3>Диагностическая карта</h3>
+
+                                <p>По закону для автомобилей старше 4-х лет нужна диагностическая карта. Мы подскажем Вам что для этого нужно. Для этого воспользуйтесь формой на нашем сайте или позвоните нашим менеджерам.</p>
+                            </div>
+
+                            <div class="diagnostic_btn">
+                                <a href="#" class="button">Узнать больше</a>
+                            </div>
+                        </div>
+
+                        <div class="diagnostic_img">
+                            <img src="/img/polisgrey.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why">
+                    <div class="why_head">
+                        <h2>Почему стоит выбрать Московский Центр ОСАГО?</h2>
+                    </div>
+
+                    <div class="why_main">
+                        <div class="why_main_text1">
+                            <div class="why_main_tb">
+                                <div class="why_main_name">
+                                    <h6>
+                                        Дешевле, чем напрямую в страховой компании.
+                                    </h6>
+    
+                                    <p>
+                                        У нас есть возможность сравнить тарифы в различных компаниях и предложить Вам наиболее интересный вариант. С большой долей вероятности мы предложим цену лучше, чем ваш прежний страховщик.
+                                    </p>
+                                </div>
+
+                                <div class="why_main_ico icon_rouble"></div>
+                            </div>
+
+                            <div class="why_main_tb">
+                                <div class="why_main_name">
+                                    <h6>
+                                        Помощь в покупке ОСАГО регионам.
+                                    </h6>
+    
+                                    <p>
+                                        Для клиентов с региональной пропиской мы помогаем оформить ОСАГО онлайн.
+                                    </p>
+                                </div>
+
+                                <div class="why_main_ico icon_email"></div>
+                            </div>
+
+                            <div class="why_main_tb">
+                                <div class="why_main_name">
+                                    <h6>
+                                        Любая форма оплаты.
+                                    </h6>
+    
+                                    <p>
+                                        Вы можете выбрать наиболее удобную для Вас форму оплаты: наличный Расчет, безналичный расчет, а так же онлайн платеж.
+                                    </p>
+                                </div>
+
+                                <div class="why_main_ico icon_payment"></div>
+                            </div>
+                        </div>
+
+                        <div class="why_main_img">
+                            <img src="/img/smarphone.webp" alt="">
+                        </div>
+
+                        <div class="why_main_text2">
+                            <div class="why_main_tb">
+                                <div class="why_main_ico icon_education"></div>
+
+                                <div class="why_main_name">
+                                    <h6>
+                                        Бонусы
+                                    </h6>
+    
+                                    <p>
+                                        При покупке ОСАГО дороже 10000 р. мы бесплатно доставим Вам полис по Москве в удобное для Вас время. При покупки полиса ОСАГО дороже 15000 р. диагностическая карта в подарок.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="why_main_tb">
+                                <div class="why_main_ico icon_list"></div>
+
+                                <div class="why_main_name">
+                                    <h6>
+                                        Диагностическая карта.
+                                    </h6>
+    
+                                    <p>
+                                        Мы помогаем нашим клиентам оформить диагностическую карту. Она может быть доставлена вместе с полисом ОСАГО.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="why_main_tb">
+                                <div class="why_main_ico icon_medal"></div>
+
+                                <div class="why_main_name">
+                                    <h6>
+                                        Только проверенные компании.
+                                    </h6>
+    
+                                    <p>
+                                        Мы предлогам полисы только проверенных и надежных компаний с рейтингом не ниже А+. Это дает Вам полное спокойствие и уверенность на дороге.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why_title">
+                        <div>
+                            <span>
+                                Московский Центр ОСАГО основан 17 января 2017 года. Мы молодая динамично развивающаяся компания.
+                                Основным видом деятельности нашей компании является страхование как физических, так и юридических лиц. Руководители и сотрудники имеют большой опыт работы в сфере страхования. Наши менеджеры всегда рады Вам помочь. 
+                            </span>
+                        </div>
+
+                        <div>
+                            <span>
+                                Мы в полную силу используем новые технологии и онлайн страхование.
+                                Сплоченный коллектив поможет Вам разобраться во всех тонкостях страхования. Наша особенность заключается в том, что клиенты для нас большее, чем просто клиенты. Мы настроены на долгосрочные отношения. На сегодняшний день мы сотрудничаем со всеми ведущими страховыми компаниями.
+                            </span>
+                        </div>
+
+                        <div>
+                            <span>
+                                Кроме того тесно взаимодействуем с крупнейшими страховыми агентствами. Качество оказываемых нами услуг было высоко оценено нашими клиентами и партнерами. Стандарты работы с клиентами не уступают европейским. Прежде всего мы находим индивидуальный подход к каждому клиенту. Без длительных ожиданий и навязывания дополнительных услуг.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_info">
+                    <div class="tab_tb">
+                        <div data-block="block_01" class="tab_tb_name">
+                            <div class="tab_tb_name_tl"> 
+                                Вы регионы страхуете? 
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="tab_tb_text block_01">
+                            Да, мы страхуем регионы. Для людей с любой пропиской у нас есть возможность предложить электронный полис ОСАГО (Е-ОСАГО).
+                        </div>
+                    </div>
+
+                    <div class="tab_tb">
+                        <div data-block="block_02" class="tab_tb_name">
+                            <div class="tab_tb_name_tl"> 
+                                Моя скидка будет учтена при покупке полиса ОСАГО у Вас?
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="tab_tb_text block_02">
+                            При оформлении полиса ОСАГО на нашем сайте, независимо от выбранной вами страховой компании скидка сохраняется за каждым водителем !
+                        </div>
+                    </div>
+
+                    <div class="tab_tb">
+                        <div data-block="block_03" class="tab_tb_name">
+                            <div class="tab_tb_name_tl"> 
+                                В какой компании лучше купить ОСАГО?
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="tab_tb_text block_03">
+                            Так как процедура урегулирования страхового случая сейчас подразумевает прямое урегулирование. т.е. обращение к своему страховщику по убыткам до 100 тыс. руб.Лучше купить ОСАГО в надежной компании, с рейтингом экспертных агентств не ниже А+ и большим количеством офисов. По цене в разных компаниях Вам помогут с разобраться наши менеджеры.
+                        </div>
+                    </div>
+
+                    <div class="tab_tb">
+                        <div data-block="block_04" class="tab_tb_name">
+                            <div class="tab_tb_name_tl"> 
+                                Как проверить КБМ и свою накопленную скидку?
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="tab_tb_text block_04">
+                            В этой теме много тонкостей и нюансов. Обратитесь к нашим менеджерам и мы любезно предоставим Вам полную информацию по Вашему КБМ и накопленной скидке.
+                        </div>
+                    </div>
+
+                    <div class="tab_tb">
+                        <div data-block="block_05" class="tab_tb_name">
+                            <div class="tab_tb_name_tl"> 
+                                Когда мой полис попадет в базу страховой компании?
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="tab_tb_text block_05">
+                            Ваш полис будет в базе страховой компании еще до покупки Вами страховки. Вы можете проверить это самостоятельно на нашем сайте, в разделе: "Проверь свой полис ОСАГО до покупки"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review_our">
+                        Отзывы наших клиентов
+                    </div>
+
+                    <div class="review_list">
+                        <div class="review_tab">
+                            <div class="review_tab_img">
+                                <img src="/img/sergey.jpg" alt="">
+                            </div>
+
+                           <div class="review_tab_tb">
+                                <div class="review_tab_tb_name">
+                                    Сергей Климов
+                                </div>
+
+                                <div class="review_tab_tb_text">
+                                    Спасибо Московский Осаго Центр. Во время продления полиса осаго. Начинался настоящий ад от звонков разных агентств и предложение своих услуг. После обращения в эту компания шквал звонков прекратился, как мне обьяснили они не продают контакты в другие агентства и ребята помогли купить ОСАГО по лучшей цене.
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="review_tab">
+                            <div class="review_tab_img">
+                                <img src="/img/anna.jpg" alt="">
+                            </div>
+
+                            <div class="review_tab_tb">
+                                <div class="review_tab_tb_name">
+                                    Анна
+                                </div>
+    
+                                <div class="review_tab_tb_text">
+                                    Долго искала молодую современную компанию. Чтоб можно было оформить полис не выходя из дома по WhatsApp или по почте. К счастью нашла, ребятам респект :- )
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="review_tab">
+                            <div class="review_tab_img">
+                                <img src="/img/nina.jpg" alt="">
+                            </div>
+
+                            <div class="review_tab_tb">
+                                <div class="review_tab_tb_name">
+                                    Нина Владимировна
+                                </div>
+    
+                                <div class="review_tab_tb_text">
+                                    Ребята из Московского центра ОСАГО подсказали, в какой компании полис осаго будет стоить дешевле всего и помогли сэкономить при покупке. Спасибо Вам. Однозначно буду вас рекомендовать своим друзьям и родственникам.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rememb_dtp">
+                        <a href="#">Памятка на случай ДТП</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts_info">
+                    <div class="contacts_info_name">
+                        Наши контакты:
+                    </div>
+
+                    <div class="contacts_info_text">
+                        +7(926)354-23-89
+                        <br>
+                        <br>
+                        e-mail: mososago.rf@yandex.ru
+                        <br>
+                        <br>
+                        Наши офисы: <br>
+                        Москва, м. Электрозаводская, <br>
+                        ул. Барабанный пер., 3.
+                        <br>
+                        <br>
+                        Пункт самовывоза: <br>
+                        м. Алтуфьево, ул., Белозерская 17а.
+                        <br>
+                        <br>
+                        М.О., Богородский городской округ, пос. им., Воровского, ул. Воровского 10/1
+                    </div>
+                </div>
+
+                <div class="contacts_map">
+                    <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A7b70ae067cae5c64d34b802043337e8717c93a137a2978b92def3ced21081b8b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_img">
+                <img src="/img/logo2.png" alt="">
+            </div>
+            <div class="footer_text">
+                <span>
+                    © Все права защищены Московским Центром ОСАГО 2017-2021
+                </span>
+            </div>
+
+            <div class="footer_text">
+                <span>
+                    3542389@gmail.com тел. +7(926)354-23-89
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

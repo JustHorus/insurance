@@ -1,0 +1,153 @@
+.sale {
+    padding: 99px 0 30px;
+    text-align: center;
+    background: #f2f2f2;
+
+    &_container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &_name {
+        margin: 0 0 90px;
+
+        & h1 {
+            margin: 0 0 40px;
+            font-size: 42px;
+            line-height: 1.23;;
+        }
+
+        & p {
+            margin: 0;
+            font-size: 24px;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+    }
+
+    &_cnt {
+        display: flex;
+        justify-content: space-between;
+
+        &_block {
+            width: 22%;
+            height: 320px;
+            background-color: rgb(112, 112, 112);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+
+            &:hover &_btn {
+                margin: 25px auto;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:first-child {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%), url(/img/present.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &:nth-child(2) {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%), url(/img/woman.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &:nth-child(3) {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%), url(/img/moneyw.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &:last-child {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%), url(/img/wom.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &_text {
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                padding: 20px 40px;
+            }
+
+            &_btn {
+                margin: 0 auto;
+                max-width: 125px;
+                cursor: pointer;
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 10px 30px;
+                border-radius: 30px;
+                font-weight: 700;
+                font-size: 14px;
+                position: relative;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+.general {
+    text-align: center;
+    margin: 35px auto;
+    
+
+    & a {
+        padding: 20px 40px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        color: #fff;
+        font-weight: 700;
+        background-color: #ff7300;
+    }
+}
+
+@media (max-width: 768px) {
+    .sale_cnt {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sale_cnt_block {
+        width: 42%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .sale_cnt_block_btn {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 414px) {
+    .sale_name h1 {
+        font-size: 30px;
+    }
+
+    .sale_name p {
+        font-size: 20px;
+    }
+
+    .sale_name {
+        margin: 0px 1px 60px;
+    }
+
+    .sale_cnt_block {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+}

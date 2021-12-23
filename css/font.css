@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'insur';
+  src:  url('../fonts/insur.eot?momk30');
+  src:  url('../fonts/insur.eot?momk30#iefix') format('embedded-opentype'),
+    url('../fonts/insur.ttf?momk30') format('truetype'),
+    url('../fonts/insur.woff?momk30') format('woff'),
+    url('../fonts/insur.svg?momk30#insur') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon_"]::before, [class*=" icon_"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'insur' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_soc:before {
+  content: "\e908";
+}
+.icon_star:before {
+  content: "\e90b";
+}
+.icon_atm:before {
+  content: "\e900";
+}
+.icon_check:before {
+  content: "\e901";
+}
+.icon_education:before {
+  content: "\e902";
+}
+.icon_email:before {
+  content: "\e903";
+}
+.icon_list:before {
+  content: "\e904";
+}
+.icon_medal:before {
+  content: "\e905";
+}
+.icon_payment:before {
+  content: "\e906";
+}
+.icon_percent:before {
+  content: "\e907";
+}
+.icon_rouble:before {
+  content: "\e909";
+}
+.icon_search:before {
+  content: "\e90a";
+}
+.icon_sup:before {
+  content: "\e90d";
+}
+.icon_present:before {
+  content: "\e99f";
+  font-weight: 700;
+}

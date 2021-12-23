@@ -1,0 +1,602 @@
+.main {
+
+    &_kasko {
+        width: 100%;
+        position: relative;
+
+        &_back {
+            background: linear-gradient(to top, rgba(0,0,0,0.70), rgba(30,190,165,0.30)), url(/img/raschet_stoimosti_KA.jpg) fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            color: #000;
+        } 
+
+        &_block {
+            position: absolute;
+            top: 31%;
+            left: 12%;
+            max-width: 660px;
+
+            & h1 {
+                font-size: 28px;
+                line-height: 46px;
+                margin: 0;
+                padding: 20px 0;
+                color:#fff;
+                letter-spacing: 1px;
+
+                & span:first-child {
+                    color: rgb(247, 132, 32);
+                }
+
+                & span:last-child {
+                    text-decoration: underline;
+                }
+            }
+
+            & p {
+                margin: 0;
+                padding: 0 0 30px;
+                font-size: 24px;
+                line-height: 30px;
+                color: #afafaf;
+                font-weight: 300;
+            }
+
+            &_btn {
+                margin: 60px 0 20px;
+
+                & a {
+                    margin: 0 10px 0 0;
+                    font-size: 16px;
+                    padding: 19px 60px;
+                    font-weight: 700;
+                    text-align: center;
+                    border: 1px solid #000;
+
+                    &:first-child {
+                        color: #000;
+                        background: #6862c7;
+                    }
+
+                    &:last-child {
+                        color: #099d6b;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// =============== kasko form ===========
+
+.kasko {
+    
+    &_wrp {
+        background: #f0f0f0;
+    }
+
+    &_container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 45px 0 0;
+    }
+
+    &_name {
+        text-align: center;
+        margin: 0 0 90px 0;
+
+        & h2 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 400;
+        }
+
+        & span {
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+
+    &_form {
+        
+
+        & form {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            align-items: flex-end;
+        }
+
+        &_bl {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+
+            & label {
+                font-size: 20px;
+                font-weight: 300;
+                margin: 0 0 7px;
+            }
+
+            & input {
+                color: #969696;
+                padding: 20px;
+                border-radius: 20px;
+                border: 1px solid #000;
+                outline: none;
+            }
+        }
+
+        & button {
+            width: 24%;
+            height: 60px;
+            width: 21%;
+            background-color: #ff7300;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    &_sub {
+        text-align: center;
+        font-size: 15px;
+        margin: 30px 0 0;
+    }
+}
+
+
+// ============== kasko partner ========
+
+.kasko_part {
+    position: relative;
+
+    &_back {
+        background:linear-gradient(to top, rgba(0,0,0,0.70), rgba(0,0,0,0.30)), url(/img/porshe57143.jpg) fixed no-repeat;
+        background-size: cover;
+        height: 500px;
+        height: 105vh;
+    }
+
+    &_wrp {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &_cont {
+        position: absolute;
+        text-align: center;
+        top: 25vh;
+        width: 100%;
+    }
+
+    &_name {
+        display: flex;
+        font-size: 52px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0 0 105px 0;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        & span {
+            width: 80%;
+            font-size: 24px;
+            margin: 40px 0 0 0;
+            line-height: 1.55;
+            font-weight: 500;
+        }
+    }
+
+    &_list {
+        
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & li {
+            margin: 0 20px;
+        }
+    }
+}
+
+
+// ============ kasko_text ===========
+
+.kasko_text {
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    &_title {
+        background: #000;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 43px;
+        width: 156px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &_main {
+        padding: 40px 0 30px;
+        font-size: 38px;
+        line-height: 1.35;
+        font-weight: 300;
+        width: 80%;
+    }
+
+    &_lin {
+        width: 100%;
+        position: relative;
+    }
+
+    &_line {
+        max-width: 1160px;
+        position: relative;
+        margin: 0 auto;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 1px;
+            background-color: #000;
+            width: 100%;
+        }
+
+        &.top::after {
+            top: 18px;
+            z-index: 1;
+        }
+
+        &.bottom::after {
+            bottom: 0;
+        }
+    }
+}
+
+// =============== kasko_doc =========
+
+.kasko_doc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+
+    & h2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &_btn {
+        margin: 80px 0 0 0;
+
+        &_clk {
+            color: #fff;
+            background-color: #1f5bff;
+        }
+    }
+
+    &_back {
+        position: absolute;
+        display: flex;
+        top: 37%;
+        z-index: 1;
+        font-size: 50px;
+        
+        &_dot {
+            margin: 0 29px;
+        }
+    }
+}
+
+
+// ============== kasko_tcont ==============
+
+.kasko_tcont {
+    padding: 30px 0;
+    background: #b2d6ff;
+    display: flex;
+    justify-content: center;
+
+    &_text {
+        padding: 30px 0 20px;
+        width: 70%;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+// ============== line =================
+
+.kasko_line {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    width: 1160px;
+    margin: 40px auto;
+}
+
+
+@media (max-width: 1024px) {
+    .main_kasko_block {
+        left: 4%;
+        max-width: 540px;
+    }
+
+    .main_kasko_block_btn {
+        display: flex;
+        margin: 60px 0 20px;
+        flex-direction: column;
+        width: 52%;
+    }
+
+    .main_kasko_block_btn a {
+        margin: 10px 0;
+    }
+
+    .kasko_container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 45px 32px 0;
+    }
+
+    .kasko_part_back {
+        background-position: right;
+        height: 50vh;
+    }
+
+    .kasko_part_name {
+        font-size: 42px;
+    }
+
+    .kasko_part_name span {
+        width: 90%;
+    }
+
+    .kasko_part_list img {
+        width: 90%;
+    }
+
+    .kasko_part_cont {
+        top: 12vh;
+    }
+
+    .kasko_doc_back {
+        top: 40%;
+    }
+
+    .doc_tname {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+    .doc_ttext {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .kasko_text_line {
+        max-width: 100%;
+    }
+
+    .kasko_line {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .kasko_doc_back {
+        display: none;
+    }
+
+    .kasko_part_cont {
+        top: 5vh;
+    }
+
+    .kasko_part_list ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .kasko_part_name {
+        margin: 0 0 70px 0;
+    }
+
+    .kasko_text_main {
+        font-size: 30px;
+    }
+
+    .kasko_doc h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .main_kasko_back {
+        height: 115vh;
+    }
+
+    .kasko_form form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kasko_form_bl {
+        width: 100%;
+    }
+
+    .kasko_form button {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+
+    .kasko_form_bl label {
+        font-size: 16px;
+    }
+
+    .kasko_form_bl input {
+        margin: 0 0 20px;
+    }
+
+    .kasko_sub {
+        font-size: 12px;
+    }
+
+    .kasko_part_name {
+        font-size: 30px;
+    }
+
+    .kasko_part_name span {
+        margin: 20px 0 0;
+    }
+
+    .kasko_part_list img {
+        width: 100%;
+    }
+
+    .kasko_part_back {
+        background-position: right;
+        height: 84vh;
+    }
+
+    .kasko_part_list li {
+        margin: 5px 20px;
+    }
+
+    .kasko_text_title {
+        font-size: 12px;
+    }
+
+    .kasko_text_main {
+        font-size: 26px;
+        width: 86%;
+    }
+
+    .kasko_doc h2 {
+        font-size: 30px;
+    }
+
+    .kasko_doc {
+        padding: 15px;
+    }
+
+    .kasko_tcont_text {
+        width: 83%;
+    }
+
+    .why_main_img2 img {
+        height: 400px;
+        margin: 15px 0;
+    }
+
+    .why_head2 h2 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 414px) {
+
+    .main_kasko_block_btn a {
+        padding: 14px 24px;
+    }
+
+    .main_kasko_back {
+        height: 136vh;
+    }
+
+    .kasko_part_back {
+        background-position: right;
+        height: 98vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .kasko_part_back {
+        background-position: right;
+        height: 102vh;
+    }
+
+    .main_kasko_block {
+        top: 21%;
+        left: 4%;
+    }
+
+    .main_kasko_back {
+        height: 120vh;
+    }
+
+    .main_kasko_block_btn a {
+        padding: 14px 14px;
+    }
+
+    .kasko_part_list li {
+        margin: 5px 4px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main_kasko_block_btn a {
+        padding: 14px 10px;
+    }
+
+    .main_kasko_back {
+        height: 123vh;
+    }
+
+    .main_kasko_block {
+        top: 13%;
+        left: 4%;
+    }
+
+    .kasko_part_back {
+        background-position: right;
+        height: 117vh;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    .main_kasko_back {
+        height: 146vh;
+    }
+
+    .main_kasko_block {
+        top: 9%;
+        left: 4%;
+    }
+    
+    .kasko_part_back {
+        background-position: right;
+        height: 155vh;
+    }
+}
